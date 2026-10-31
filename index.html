@@ -1,70 +1,47 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Student Profile</title>
+    <title>My Student Mini-Site | Home</title>
 </head>
 <body>
-
     <header>
-        <h1>My Student Profile</h1>
-        <p>Shubham Singh | Student | Beginner Web Developer</p>
+        <h1>My Student Mini-Site</h1>
+        <p>A small website about my learning journey.</p>
     </header>
 
-    <nav>
-        <a href="#about">About Me</a> |
-        <a href="#skills">Skills</a> |
-        <a href="#goals">Learning Goals</a>
+    <nav aria-label="Main navigation">
+        <a href="index.html">Home</a> |
+        <a href="about.html">About</a> |
+        <a href="#projects">Projects</a>
     </nav>
 
     <main>
-        <section id="about">
-            <h2>About Me</h2>
-           <img src="/tech-fellows-90-days/day-02-html-structure/images/profile.jpg"
-     alt="Shubham Singh profile photo"
-     width="200">
-            <p>My name is Shubham Singh. I am a BCA student interested in web development.</p>
-            <p>I am learning how to create websites using HTML, CSS and JavaScript.</p>
-            <p>I enjoy learning new technologies and building practical projects.</p>
+        <section id="welcome">
+            <h2>Welcome</h2>
+            <p>Hello! My name is Shubham Singh. I am a BCA student interested in web development.</p>
+            <p>I am learning how websites are created using HTML, CSS, and JavaScript.</p>
+            <p>I enjoy exploring new technology and improving my skills by building small projects.</p>
+            <figure>
+                <img src="images/profile.jpg" alt="Profile photo of Shubham Singh" width="200">
+                <figcaption>My learning journey as a beginner web developer.</figcaption>
+            </figure>
         </section>
 
-        <section id="skills">
-            <h2>Skills I Am Learning</h2>
+        <section id="projects">
+            <h2>Learning Projects</h2>
             <ul>
-                <li>HTML</li>
-                <li>CSS</li>
-                <li>JavaScript</li>
-                <li>React</li>
+                <li>Day 1: First HTML page</li>
+                <li>Day 2: Structured student profile page</li>
+                <li>Day 3: Linked student mini-site</li>
+                <li>Next: Practice CSS and make pages responsive</li>
             </ul>
         </section>
-
-        <section id="goals">
-            <h2>My Learning Goals</h2>
-            <ol>
-                <li>Learn HTML and CSS properly.</li>
-                <li>Understand JavaScript fundamentals.</li>
-                <li>Build responsive websites.</li>
-                <li>Become a Full Stack Developer.</li>
-            </ol>
-        </section>
-
-        <section>
-            <h2>Useful Learning Resource</h2>
-            <p>
-                <a href="https://developer.mozilla.org/en-US/docs/Web/HTML" target="_blank">
-                    Learn HTML from MDN Web Docs
-                </a>
-            </p>
-        </section>
-
-        <!-- Footer contains copyright information -->
     </main>
 
     <footer>
-        <p>Created by Shubham Singh | Tech Fellows Day 02</p>
+        <p>Created by Shubham Singh for Tech Fellows Day 3.</p>
     </footer>
-
 </body>
 </html>
