@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Shubham Singh's student developer portfolio.">
+  <title>Shubham Singh | Student Developer Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header class="site-header" id="home">
+    <nav class="nav container" aria-label="Main navigation">
+      <a class="brand" href="#home">Shubham<span>.</span></a>
+      <button class="menu-toggle" id="menuToggle" aria-label="Open navigation" aria-expanded="false">☰</button>
+      <div class="nav-links" id="navLinks">
+        <a href="#home">Home</a><a href="#about">About</a><a href="#skills">Skills</a><a href="#goals">Goals</a><a href="#projects">Projects</a><a href="#contact">Contact</a>
+        <button class="theme-toggle" id="themeToggle" type="button" aria-label="Toggle dark mode">☾ Dark Mode</button>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero container" aria-labelledby="hero-title">
+      <div class="hero-copy">
+        <p class="eyebrow">WELCOME TO MY PORTFOLIO</p>
+        <h1 id="hero-title">Hello, I'm <span>Shubham Singh</span></h1>
+        <h2>BCA Student <i>|</i> Web Developer <i>|</i> Creative Designer</h2>
+        <p class="hero-text">I am learning web development and building useful digital experiences with HTML, CSS and JavaScript. I enjoy turning ideas into simple, creative projects.</p>
+        <div class="hero-actions"><a class="button primary" href="#projects">Explore My Projects <span>↗</span></a><a class="button secondary" href="#about">More About Me</a></div>
+        <div class="social-note">Currently learning <strong>Full-Stack Web Development</strong></div>
+      </div>
+      <div class="hero-visual">
+        <div class="photo-ring"><img src="images/profile.jpg" alt="Portrait of Shubham Singh" class="profile-photo"></div>
+        <span class="float-tag tag-one">HTML</span><span class="float-tag tag-two">CSS</span><span class="float-tag tag-three">JS</span>
+      </div>
+    </section>
+
+    <section class="section container" id="about">
+      <div class="section-heading"><p class="eyebrow">GET TO KNOW ME</p><h2>About <span>Me</span></h2><p>A little introduction about my background and interests.</p></div>
+      <div class="about-card"><div class="about-mark">SS</div><div><h3>Student, learner and creator</h3><p>My name is Shubham Singh. I am a BCA student interested in technology, web development and creative design. I enjoy learning new skills, exploring useful tools and building projects as I improve my coding abilities.</p><p>My goal is to become a skilled full-stack web developer and create websites and applications that solve real problems.</p></div></div>
+    </section>
+
+    <section class="section section-soft" id="skills">
+      <div class="container"><div class="section-heading"><p class="eyebrow">WHAT I'M LEARNING</p><h2>My <span>Skills</span></h2><p>Technologies and tools I am practising.</p></div>
+        <div class="card-grid skills-grid">
+          <article class="info-card"><div class="card-icon pink">&lt;/&gt;</div><h3>HTML5</h3><p>Creating structured and semantic web pages.</p><div class="skill-track"><span style="width:78%"></span></div></article>
+          <article class="info-card"><div class="card-icon blue">✦</div><h3>CSS3</h3><p>Styling pages with layouts, colours and responsive design.</p><div class="skill-track"><span style="width:65%"></span></div></article>
+          <article class="info-card"><div class="card-icon yellow">JS</div><h3>JavaScript</h3><p>Learning programming basics and interactive features.</p><div class="skill-track"><span style="width:38%"></span></div></article>
+          <article class="info-card"><div class="card-icon green">⌘</div><h3>Git & GitHub</h3><p>Managing code and publishing projects online.</p><div class="skill-track"><span style="width:60%"></span></div></article>
+        </div>
+        <p class="small-note">Skill bars represent my current learning progress, not professional proficiency.</p>
+      </div>
+    </section>
+
+    <section class="section container" id="goals">
+      <div class="section-heading"><p class="eyebrow">MY NEXT STEPS</p><h2>Learning <span>Goals</span></h2><p>What I am working towards.</p></div>
+      <div class="goals-grid"><div class="goal-item"><b>01</b><div><h3>Strengthen the basics</h3><p>Improve my HTML, CSS and JavaScript fundamentals.</p></div></div><div class="goal-item"><b>02</b><div><h3>Build real projects</h3><p>Create useful, responsive websites and applications.</p></div></div><div class="goal-item"><b>03</b><div><h3>Learn full-stack development</h3><p>Explore React, backend development and databases.</p></div></div></div>
+    </section>
+
+    <section class="section section-soft" id="projects">
+      <div class="container"><div class="section-heading"><p class="eyebrow">MY WORK</p><h2>Featured <span>Projects</span></h2><p>Some projects from my web development learning journey.</p></div>
+        <div class="card-grid project-grid"><article class="project-card"><div class="project-art art-one"><span>01</span><strong>My First<br>Web Pages</strong></div><div class="project-body"><p class="project-type">HTML PRACTICE</p><h3>Student Profile Website</h3><p>A beginner project introducing my profile, interests and learning goals.</p><span class="status">Learning project</span></div></article>
+        <article class="project-card"><div class="project-art art-two"><span>02</span><strong>Personal<br>Website</strong></div><div class="project-body"><p class="project-type">HTML & CSS</p><h3>Multi-page Personal Website</h3><p>A two-page website with Home and About pages, navigation and profile image.</p><span class="status">Learning project</span></div></article>
+        <article class="project-card"><div class="project-art art-three"><span>03</span><strong>CSS<br>Portfolio</strong></div><div class="project-body"><p class="project-type">CSS PRACTICE</p><h3>Styled Personal Website</h3><p>An improved version using an external stylesheet, consistent colours and typography.</p><span class="status">Learning project</span></div></article></div>
+      </div>
+    </section>
+
+    <section class="section container" id="contact">
+      <div class="contact-panel"><div><p class="eyebrow">LET'S CONNECT</p><h2>Contact <span>Me</span></h2><p>Have a suggestion, opportunity or feedback? Send me a message.</p><a class="contact-email" href="mailto:shubham@example.com">shubham@example.com</a></div>
+        <form id="contactForm" class="contact-form"><label for="name">Your Name</label><input id="name" name="name" type="text" placeholder="Enter your name" required><label for="email">Your Email</label><input id="email" name="email" type="email" placeholder="Enter your email" required><label for="message">Your Message</label><textarea id="message" name="message" rows="4" placeholder="Write your message" required></textarea><button class="button primary" type="submit">Prepare Email ↗</button><p class="form-note" id="formNote">The button opens your email app. Replace the sample email address with your real email before publishing.</p></form>
+      </div>
+    </section>
+  </main>
+  <footer class="footer"><div class="container footer-inner"><a class="brand" href="#home">Shubham<span>.</span></a><p>Learning today. Building for tomorrow.</p><p>© <span id="year">2026</span> Shubham Singh. All Rights Reserved.</p></div></footer>
+</body>
+</html>
