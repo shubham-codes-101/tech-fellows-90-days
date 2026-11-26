@@ -1,0 +1,79 @@
+/* Universal selector: include padding and borders in element dimensions */
+*, *::before, *::after { box-sizing: border-box; }
+
+/* Element selector */
+body {
+    margin: 0;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    background-color: #f0f4f8;
+    color: #263238;
+    line-height: 1.6;
+}
+p { font-size: 17px; line-height: 1.7; }
+
+.site-header {
+    max-width: 1000px;
+    margin: 0 auto 28px;
+    padding: 28px 20px;
+    border: 1px solid #173b63;
+    border-radius: 14px;
+    background-color: #173b63;
+    color: white;
+    text-align: center;
+}
+#page-title { margin: 8px 0; color: white; text-align: center; }
+.tagline { margin: 8px 0 18px; color: #e0eaf5; }
+.logo { width: 52px; height: 52px; vertical-align: middle; }
+nav { margin-top: 16px; }
+nav a {
+    display: inline-block;
+    margin: 5px 8px;
+    padding: 8px 14px;
+    border: 1px solid rgba(255,255,255,.65);
+    border-radius: 7px;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+nav a:hover, nav a[aria-current="page"] { background: white; color: #173b63; }
+
+/* Class selector: reusable section styling */
+.content-section {
+    margin: 22px 0;
+    padding: 20px;
+    border: 1px solid #c6d6e5;
+    border-radius: 12px;
+    background: white;
+}
+/* Bonus reusable card class */
+.card { box-shadow: 0 3px 10px rgba(23,59,99,.07); }
+.content-section h2 { margin-top: 0; color: #24527a; }
+
+.profile-card { display: flex; align-items: center; gap: 24px; }
+.profile-image {
+    display: block;
+    width: 150px;
+    height: 150px;
+    flex: 0 0 150px;
+    object-fit: cover;
+    border: 3px solid #24527a;
+    border-radius: 14px;
+}
+.text-link { display: inline-block; margin-top: 8px; color: #174f83; font-weight: bold; }
+.site-footer {
+    max-width: 1000px;
+    margin: 28px auto 0;
+    padding: 14px 18px;
+    border-radius: 10px;
+    background: #173b63;
+    color: white;
+    text-align: center;
+}
+.site-footer p { margin: 0; font-size: 14px; }
+
+@media (max-width: 650px) {
+    body { padding: 12px; }
+    .profile-card { flex-direction: column; text-align: center; }
+    .content-section { margin: 16px 0; padding: 16px; }
+}
