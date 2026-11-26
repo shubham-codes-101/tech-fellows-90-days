@@ -1,0 +1,19 @@
+TECH FELLOWS - DAY 08
+Topic: CSS Introduction and External Stylesheets
+
+Two Changes That Improved Readability:
+
+1. Background and Text Colors:
+I changed the background color to light blue and the text color to dark grey. This improved contrast and made the content easier to read.
+
+2. Font Size and Line Height:
+I set paragraph text to 18px and line-height to 1.7. This made the text clearer and more comfortable to read.
+
+Learning Experience:
+
+I learned how to connect an external CSS stylesheet with HTML pages. I also learned how to style headings, paragraphs, backgrounds, borders and navigation links.
+
+I used the same CSS file for both index.html and about.html to maintain a consistent design.
+
+Bonus Challenge:
+I created a dark blue header with a centered title and navigation links.
