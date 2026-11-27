@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 11 CSS Daily Practice</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header class="page-header">
+        <p class="eyebrow">TECH FELLOWS · DAILY PRACTICE</p>
+        <h1 id="title">Day 11: CSS Cascade, Specificity, Inheritance &amp; Colors</h1>
+        <p class="intro">A hands-on page exploring how CSS rules are inherited, prioritized and applied.</p>
+    </header>
+
+    <main>
+        <section class="panel" id="inheritance">
+            <h2>Task 1 · Inheritance</h2>
+            <p>This paragraph inherits its text color and font family from the body.</p>
+            <p>Hello. This paragraph is used for the specificity experiment.</p>
+            <p>This paragraph contains a <a href="#color-formats">link that inherits the paragraph color</a>.</p>
+            <ul>
+                <li>First list item</li>
+                <li>Second list item</li>
+                <li>Third list item</li>
+            </ul>
+            <div class="border-demo">The body has a border, but this child does not inherit that border.</div>
+        </section>
+
+        <section class="panel" id="specificity">
+            <h2>Task 2 · Specificity battle</h2>
+            <p class="note" id="msg">Hello. Inspect this paragraph to see which selector wins.</p>
+            <p class="small-note">Final expected color: blue, because the .note declaration uses !important.</p>
+        </section>
+
+        <section class="panel" id="source-order">
+            <h2>Task 3 · Source order</h2>
+            <p>Two .box rules are in the CSS. The later rule wins when specificity is equal.</p>
+            <div class="box">150 × 150</div>
+            <p class="small-note">Swap the two .box declarations in style.css to test source order again.</p>
+        </section>
+
+        <section class="panel" id="color-formats">
+            <h2>Task 4 · Color formats</h2>
+            <p>All six boxes use the same blue, expressed in different CSS color formats.</p>
+            <div class="color-grid">
+                <div class="color-swatch named">Named<br>blue</div>
+                <div class="color-swatch hex">HEX<br>#0000ff</div>
+                <div class="color-swatch short-hex">3-digit HEX<br>#00f</div>
+                <div class="color-swatch rgb">RGB<br>rgb(0, 0, 255)</div>
+                <div class="color-swatch rgba">RGBA<br>rgba(0, 0, 255, 1)</div>
+                <div class="color-swatch hsl">HSL<br>hsl(240, 100%, 50%)</div>
+            </div>
+            <p class="small-note">The RGBA example is fully opaque so it matches the same blue. A 50% alpha example is shown in Task 6.</p>
+        </section>
+
+        <section class="panel" id="hsl-shades">
+            <h2>Task 5 · HSL shades</h2>
+            <p>Hue is 210° and saturation is 60%. Only lightness changes.</p>
+            <div class="shade-grid">
+                <div class="shade shade-20">20%</div>
+                <div class="shade shade-35">35%</div>
+                <div class="shade shade-50">50%</div>
+                <div class="shade shade-65">65%</div>
+                <div class="shade shade-80">80%</div>
+            </div>
+        </section>
+
+        <section class="panel" id="transparency">
+            <h2>Task 6 · Transparency</h2>
+            <p>Compare a semi-transparent background color with the opacity version below.</p>
+            <div class="transparency-stage">
+                <div class="rgba-card">RGBA background: 50% transparent. Text stays fully opaque.</div>
+            </div>
+            <div class="opacity-stage">
+                <div class="opacity-card">Opacity: 50%. Both the box and its text become transparent.</div>
+            </div>
+        </section>
+
+        <section class="panel" id="variables">
+            <h2>Task 7 · CSS variables</h2>
+            <p>Colors in this section use custom properties defined in :root.</p>
+            <button class="demo-button" type="button">Hover over me</button>
+            <p class="small-note">Change only --primary in :root to see the page background and heading update.</p>
+        </section>
+
+        <section class="panel" id="debug">
+            <h2>Task 8 · Debug challenge</h2>
+            <p class="highlight">Welcome</p>
+            <h3 id="debug-title">Course</h3>
+            <p class="small-note">The corrected selectors and declarations are marked with comments in style.css.</p>
+            <ul class="mistake-list">
+                <li>Added the missing class selector dot: .highlight.</li>
+                <li>Corrected the invalid 5-digit hex color to #ffff00.</li>
+                <li>Changed the invalid property name colour to color.</li>
+                <li>Added the missing semicolon after the darkblue value.</li>
+                <li>Changed the invalid RGB channel value 300 to 255.</li>
+                <li>Changed the invalid alignment value centre to center.</li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>Created by Shubham Singh · Tech Fellows</p>
+    </footer>
+</body>
+</html>
